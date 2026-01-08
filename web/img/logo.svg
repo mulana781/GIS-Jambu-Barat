@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#06b6d4"/>
+      <stop offset="1" stop-color="#10b981"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="40" fill="#071033"/>
+  <g transform="translate(48,40)">
+    <!-- map pin -->
+    <path d="M80 0C57 0 38 19 38 42c0 33 42 78 42 78s42-45 42-78C164 19 145 0 122 0z" fill="url(#g)"/>
+    <circle cx="80" cy="42" r="18" fill="#ffffff"/>
+    <!-- letter J -->
+    <text x="46" y="98" font-family="Inter, Arial, sans-serif" font-size="52" fill="#ffffff" font-weight="700">J</text>
+  </g>
+</svg>

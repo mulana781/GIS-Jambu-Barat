@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIG Desa Jambu Barat</title>
+
+    <!-- Leaflet CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <header class="sidebar-header">
+          <div>
+            <h1>SIG Desa Jambu Barat</h1>
+            <p>Prototype Sistem Informasi Geografis berbasis web</p>
+          </div>
+          <button id="toggle-fullscreen" class="fullscreen-btn" type="button">
+            Mode Layar Penuh
+          </button>
+        </header>
+
+        <section class="sidebar-section">
+          <h2>Layer Peta</h2>
+          <div class="layer-group">
+            <label>
+              <input type="radio" name="basemap" value="osm" checked />
+              OpenStreetMap Standar
+            </label>
+            <label>
+              <input type="radio" name="basemap" value="satellite" />
+              Citra Satelit (Esri)
+            </label>
+            <label>
+              <input type="checkbox" id="toggle-batas-desa" checked />
+              Batas Desa
+            </label>
+          </div>
+        </section>
+
+        <section class="sidebar-section">
+          <h2>Fasilitas Umum</h2>
+          <div class="layer-group">
+            <label>
+              <input type="checkbox" class="overlay-toggle" value="education" checked />
+              Pendidikan
+            </label>
+            <label>
+              <input type="checkbox" class="overlay-toggle" value="health" checked />
+              Kesehatan
+            </label>
+            <label>
+              <input type="checkbox" class="overlay-toggle" value="worship" checked />
+              Tempat Ibadah
+            </label>
+            <label>
+              <input type="checkbox" class="overlay-toggle" value="public" checked />
+              Lainnya
+            </label>
+          </div>
+        </section>
+
+        <section class="sidebar-section info">
+          <h2>Info</h2>
+          <p>
+            Gunakan kontrol di atas untuk memilih layer dasar dan menampilkan /
+            menyembunyikan marker fasilitas umum di Desa Jambu Barat.
+          </p>
+        </section>
+      </aside>
+
+      <main class="map-wrapper">
+        <div id="map"></div>
+        <button id="map-exit-fullscreen" class="fullscreen-fab" type="button">
+          Keluar Mode Peta Penuh
+        </button>
+      </main>
+    </div>
+
+    <!-- Leaflet JS -->
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/map.js"></script>
+  </body>
+  </html>
+
+
